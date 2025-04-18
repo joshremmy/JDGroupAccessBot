@@ -1,1 +1,136 @@
+/* General Page Styles */
+body {
+  background: radial-gradient(circle at top left, #2c3e50, #000);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;
+}
 
+/* Header with Logo and Title */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.header-title {
+  margin-left: auto;
+}
+
+/* Main Button */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff0000, #ff4f4f);
+  color: #fff;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 35px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  animation: pulse 2s infinite;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.8);
+}
+
+/* About Section */
+.about-section {
+  background-color: rgba(33, 33, 33, 0.9);
+  padding: 50px 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-10px);
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #ff4f4f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #bbb;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}
+
+/* Animation for Button */
+@keyframes pulse {
+  0% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
+  50% { box-shadow: 0 0 35px rgba(255, 0, 0, 0.7); }
+  100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
+}
+
+/* Mobile-Responsive Styles */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-title {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+}
