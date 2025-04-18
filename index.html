@@ -1,119 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JDGroupAccessBot</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
   <!-- Header -->
- <header class="fancy-header">
-  <div class="logo-title">
-    <img src="images/logo.png" alt="Logo" class="logo" id="logo">
-  </div>
-
-  <div class="right-controls">
-    <nav class="navbar" id="navMenu">
-      <a href="#about">📄 About</a>
-      <a href="#faq">❓ FAQ</a>
-      <a href="#privacy">🔐 Privacy</a>
-      <a href="#contact">📬 Contact</a>
+  <header class="fancy-header">
+    <div class="logo-title">
+      <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
       <a href="https://t.me/JDGroupAccessBot" target="_blank">🤖 Start</a>
     </nav>
-    <div class="dark-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">
-      🌙
-    </div>
-    <div class="burger" onclick="toggleMenu()">☰</div>
-  </div>
-</header>
+  </header>
 
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>📄 About</h2>
-    <p>
-      JDGroupAccessBot is a Telegram bot that checks if users are subscribed to your YouTube channel before letting them into your private Telegram group.  
-      It's fast, secure, and makes community access simple and fair.
-    </p>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="section">
-    <h2>❓ Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <h3>What does the bot do?</h3>
-      <p>It verifies if someone is subscribed to your YouTube channel before allowing them access to a private Telegram group.</p>
-    </div>
-    <div class="faq-item">
-      <h3>Is it safe?</h3>
-      <p>Yes. It uses secure Google OAuth and only reads subscription data. We never store or share sensitive information.</p>
-    </div>
-    <div class="faq-item">
-      <h3>How do I start?</h3>
-      <p>Just click the Start button and follow the verification process. Simple and smooth.</p>
-    </div>
-  </section>
-
-  <!-- Privacy Section -->
-  <section id="privacy" class="section">
-    <h2>🔐 Privacy Policy</h2>
-    <p>
-      We respect your privacy. JDGroupAccessBot only accesses your public YouTube subscription data during verification.  
-      Your Telegram and YouTube information is never stored, shared, or sold. All invite links are one-time use and expire once claimed.
-    </p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>📬 Contact</h2>
-    <p>
-      Have questions or need help? DM us on  
-      <a href="https://t.me/JDGroupAccessBot" target="_blank">Telegram</a>.
-    </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to JDGroupAccessBot</h1>
+    <p>Your Telegram group just got a whole lot smarter. Verify YouTube subscriptions with ease!</p>
+    <a href="https://t.me/JDGroupAccessBot" class="cta-btn">Start Bot</a>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-links">
-      <a href="#about">About</a>
-      <a href="#faq">FAQ</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#contact">Contact</a>
-      <a href="https://t.me/JDGroupAccessBot" target="_blank">Start Bot</a>
-    </div>
+  <footer>
     <p>&copy; 2025 JDGroupAccessBot. All rights reserved.</p>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    function toggleMenu() {
-      document.getElementById("navMenu").classList.toggle("show");
-    }
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-        });
-        document.getElementById("navMenu").classList.remove("show");
-      });
-    });
-
-    // Dark mode toggle
-    function toggleDarkMode() {
-      document.body.classList.toggle("dark");
-      localStorage.setItem("darkMode", document.body.classList.contains("dark"));
-    }
-
-    window.onload = () => {
-      if (localStorage.getItem("darkMode") === "true") {
-        document.body.classList.add("dark");
-      }
-    };
-  </script>
 </body>
 </html>
