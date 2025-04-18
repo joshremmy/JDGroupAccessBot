@@ -18,7 +18,9 @@ body {
   justify-content: space-between;
   z-index: 1000;
   border-bottom: 1px solid #333;
+  gap: 20px; /* add this for consistent spacing */
 }
+
 
 .logo-title {
   display: flex;
@@ -114,6 +116,13 @@ footer.footer {
 .footer-links a:hover {
   color: #ff4f4f;
 }
+
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 
 @media (max-width: 768px) {
   .navbar {
