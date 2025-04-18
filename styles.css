@@ -49,6 +49,46 @@ a:hover {
   text-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
 
+.nav-links a {
+  margin: 0 15px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.nav-links a:hover {
+  color: #ff7b7b;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.hero:hover {
+  transform: translateY(-5px);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #ff4f4f;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
 /* Main Button */
 .btn {
   display: inline-block;
@@ -71,9 +111,71 @@ a:hover {
   box-shadow: 0 0 35px rgba(255, 0, 0, 0.8);
 }
 
-/* About, Features, FAQ Sections */
-.about-section,
-.features-section,
+/* About Section */
+.about-section {
+  background-color: rgba(33, 33, 33, 0.9);
+  padding: 50px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-10px);
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  color: #ff4f4f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Features Section */
+.features-section {
+  background-color: rgba(33, 33, 33, 0.9);
+  padding: 50px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-section:hover {
+  transform: translateY(-10px);
+}
+
+.features-section h2 {
+  font-size: 2.2rem;
+  color: #ff4f4f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+}
+
+.features-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features-section li {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* FAQ Section */
 .faq-section {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 50px 20px;
@@ -86,14 +188,10 @@ a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-section:hover,
-.features-section:hover,
 .faq-section:hover {
   transform: translateY(-10px);
 }
 
-.about-section h2,
-.features-section h2,
 .faq-section h2 {
   font-size: 2.2rem;
   color: #ff4f4f;
@@ -101,21 +199,42 @@ a:hover {
   text-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
 }
 
-.about-section p,
-.features-section ul,
-.features-section li,
-.faq-section p,
-.faq-section h3 {
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.3rem;
+  color: #ff4f4f;
+}
+
+.faq-item p {
   font-size: 1.1rem;
   color: #ddd;
 }
 
-/* Optional: List styling for FAQ */
-.faq-section ul,
-.faq-section li {
+/* Contact Section */
+.contact-section {
+  background-color: rgba(33, 33, 33, 0.9);
+  padding: 50px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  color: #ff4f4f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
+}
+
+.contact-section p {
   font-size: 1.1rem;
   color: #ddd;
-  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -126,40 +245,19 @@ a:hover {
   text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
 }
 
+.footer-links {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: #ff4f4f;
+  margin: 0 10px;
+}
+
 /* Animation for Button */
 @keyframes pulse {
   0% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
-  50% { box-shadow: 0 0 35px rgba(255, 0, 0, 0.7); }
+  50% { box-shadow: 0 0 35px rgba(255, 0, 0, 0.8); }
   100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
-}
-
-/* Mobile-Responsive Styles */
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .header-title {
-    margin-left: 0;
-    margin-top: 10px;
-    font-size: 1.8rem;
-  }
-
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
-
-  .btn {
-    padding: 12px 28px;
-    font-size: 1rem;
-  }
-
-  .about-section,
-  .features-section,
-  .faq-section {
-    padding: 30px 15px;
-  }
 }
