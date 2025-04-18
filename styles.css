@@ -22,6 +22,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -31,6 +32,10 @@ body {
 
 .header-title {
   margin-left: auto;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4f4f;
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
 }
 
 /* Main Button */
@@ -47,6 +52,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.4s ease;
   box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
   animation: pulse 2s infinite;
+  margin-top: 20px;
 }
 
 .btn:hover {
@@ -54,64 +60,35 @@ body {
   box-shadow: 0 0 35px rgba(255, 0, 0, 0.8);
 }
 
-/* About Section */
-.about-section {
-  background-color: rgba(33, 33, 33, 0.9);
-  padding: 50px 20px;
-  margin-top: 40px;
-  border-radius: 8px;
-  width: 80%;
-  max-width: 800px;
-  text-align: left;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-}
-
-.about-section:hover {
-  transform: translateY(-10px);
-}
-
-.about-section h2 {
-  font-size: 2.2rem;
-  color: #ff4f4f;
-  margin-bottom: 20px;
-  text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
-}
-
-.about-section p {
-  font-size: 1.1rem;
-  color: #ddd;
-}
-
-/* features Section */
+/* About and Features Section */
+.about-section,
 .features-section {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 50px 20px;
   margin-top: 40px;
-  border-radius: 8px;
-  width: 80%;
+  border-radius: 10px;
+  width: 90%;
   max-width: 800px;
   text-align: left;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
   transition: transform 0.3s ease;
 }
 
+.about-section:hover,
 .features-section:hover {
   transform: translateY(-10px);
 }
 
+.about-section h2,
 .features-section h2 {
   font-size: 2.2rem;
   color: #ff4f4f;
   margin-bottom: 20px;
-  text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+  text-shadow: 0 0 6px rgba(255, 0, 0, 0.6);
 }
 
-.features-section ul {
-  font-size: 1.1rem;
-  color: #ddd;
-}
-
+.about-section p,
+.features-section ul,
 .features-section li {
   font-size: 1.1rem;
   color: #ddd;
@@ -137,17 +114,13 @@ body {
   .header {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
   }
 
   .header-title {
     margin-left: 0;
     margin-top: 10px;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .logo {
@@ -158,6 +131,10 @@ body {
   .btn {
     padding: 12px 28px;
     font-size: 1rem;
- 
+  }
 
-  
+  .about-section,
+  .features-section {
+    padding: 30px 15px;
+  }
+}
