@@ -107,7 +107,12 @@ body {
   text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
 }
 
-.features-section p {
+.features-section ul {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.features-section li {
   font-size: 1.1rem;
   color: #ddd;
 }
