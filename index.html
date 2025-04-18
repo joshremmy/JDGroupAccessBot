@@ -23,13 +23,22 @@
 
     /* Header with logo */
     .header {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      width: 100%;
-      max-width: 1200px;
-      margin-bottom: 30px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.header-title {
+  margin-left: auto;
+}
 
     .logo {
       width: 60px;
@@ -134,12 +143,17 @@
   </style>
 </head>
 <body>
+  
   <!-- Header with Logo -->
-  <div class="header">
-    <!-- Replace 'images/logo.png' with the relative path to your logo -->
-    <img src="images/logo.png" alt="JDGroupAccessBot Logo" class="logo">
+ <div class="header">
+  <!-- Left side: logo -->
+  <img src="images/logo.png" alt="JDGroupAccessBot Logo" class="logo">
+  
+  <!-- Right side: name -->
+  <div class="header-title">
     <h1>JDGroupAccessBot</h1>
   </div>
+</div>
 
   <p>Instant access to exclusive Telegram groups — just verify your YouTube subscription and you're in. Fast, secure, no fluff.</p>
   <a class="btn" href="https://t.me/JDGroupAccessBot" target="_blank">Start Verification</a>
