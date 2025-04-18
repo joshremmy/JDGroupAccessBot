@@ -9,13 +9,12 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="fancy-header">
-    <div class="logo-title">
-      <img src="images/logo.png" alt="Logo" class="logo" id="logo">
-    </div>
+ <header class="fancy-header">
+  <div class="logo-title">
+    <img src="images/logo.png" alt="Logo" class="logo" id="logo">
+  </div>
 
-    <div class="burger" onclick="toggleMenu()">☰</div>
-
+  <div class="right-controls">
     <nav class="navbar" id="navMenu">
       <a href="#about">📄 About</a>
       <a href="#faq">❓ FAQ</a>
@@ -23,11 +22,13 @@
       <a href="#contact">📬 Contact</a>
       <a href="https://t.me/JDGroupAccessBot" target="_blank">🤖 Start</a>
     </nav>
-
     <div class="dark-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">
       🌙
     </div>
-  </header>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
 
   <!-- About Section -->
   <section id="about" class="section">
