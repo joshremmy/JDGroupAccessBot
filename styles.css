@@ -83,6 +83,35 @@ body {
   color: #ddd;
 }
 
+/* features Section */
+.features-section {
+  background-color: rgba(33, 33, 33, 0.9);
+  padding: 50px 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.features-section:hover {
+  transform: translateY(-10px);
+}
+
+.features-section h2 {
+  font-size: 2.2rem;
+  color: #ff4f4f;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+
+.features-section p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
 /* Footer */
 .footer {
   margin-top: 60px;
