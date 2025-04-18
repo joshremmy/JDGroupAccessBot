@@ -14,6 +14,17 @@ body {
   overflow-y: auto;
 }
 
+/* Anchor Tag Styling */
+a {
+  color: #ff4f4f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff7b7b;
+}
+
 /* Header with Logo and Title */
 .header {
   display: flex;
@@ -60,10 +71,10 @@ body {
   box-shadow: 0 0 35px rgba(255, 0, 0, 0.8);
 }
 
-/* About and Features faq Section */
+/* About, Features, FAQ Sections */
 .about-section,
 .features-section,
-.faq-section  {
+.faq-section {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 50px 20px;
   margin-top: 40px;
@@ -72,18 +83,18 @@ body {
   max-width: 800px;
   text-align: left;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-section:hover,
 .features-section:hover,
-.faq-section:hover  {
+.faq-section:hover {
   transform: translateY(-10px);
 }
 
 .about-section h2,
 .features-section h2,
-.faq-section h2  {
+.faq-section h2 {
   font-size: 2.2rem;
   color: #ff4f4f;
   margin-bottom: 20px;
@@ -92,11 +103,19 @@ body {
 
 .about-section p,
 .features-section ul,
-.features-section li, 
-.faq-section p
-.faq-section h3  {
+.features-section li,
+.faq-section p,
+.faq-section h3 {
   font-size: 1.1rem;
   color: #ddd;
+}
+
+/* Optional: List styling for FAQ */
+.faq-section ul,
+.faq-section li {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -139,7 +158,8 @@ body {
   }
 
   .about-section,
-  .features-section {
+  .features-section,
+  .faq-section {
     padding: 30px 15px;
   }
 }
