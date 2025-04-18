@@ -60,9 +60,10 @@ body {
   box-shadow: 0 0 35px rgba(255, 0, 0, 0.8);
 }
 
-/* About and Features Section */
+/* About and Features faq Section */
 .about-section,
-.features-section {
+.features-section,
+.faq-section  {
   background-color: rgba(33, 33, 33, 0.9);
   padding: 50px 20px;
   margin-top: 40px;
@@ -75,12 +76,14 @@ body {
 }
 
 .about-section:hover,
-.features-section:hover {
+.features-section:hover,
+.faq-section:hover  {
   transform: translateY(-10px);
 }
 
 .about-section h2,
-.features-section h2 {
+.features-section h2,
+.faq-section h2  {
   font-size: 2.2rem;
   color: #ff4f4f;
   margin-bottom: 20px;
@@ -89,7 +92,9 @@ body {
 
 .about-section p,
 .features-section ul,
-.features-section li {
+.features-section li, 
+.faq-section p
+.faq-section h3  {
   font-size: 1.1rem;
   color: #ddd;
 }
