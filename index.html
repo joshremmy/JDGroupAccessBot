@@ -3,207 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JDGroupAccessBot – Verify & Join</title>
-  <link rel="icon" href="https://www.youtube.com/s/desktop/4e9ebcd6/img/favicon.ico">
-  <style>
-    body {
-      background: radial-gradient(circle at top left, #2c3e50, #000);
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-      overflow-y: auto;
-    }
-
-    /* Header with logo */
-    .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 30px;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-}
-
-.header-title {
-  margin-left: auto;
-}
-
-    .logo {
-      width: 60px;
-      height: 60px;
-      margin-right: 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 1px;
-      text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.7);
-    }
-
-    p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin-bottom: 2.5rem;
-      color: #bfbfbf;
-      text-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
-    }
-
-    .btn {
-      display: inline-block;
-      background: linear-gradient(135deg, #ff0000, #ff4f4f);
-      color: #fff;
-      padding: 15px 35px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      border: none;
-      border-radius: 35px;
-      text-decoration: none;
-      transition: transform 0.3s ease, box-shadow 0.4s ease;
-      box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
-      animation: pulse 2s infinite;
-    }
-
-    .btn:hover {
-      transform: scale(1.07);
-      box-shadow: 0 0 35px rgba(255, 0, 0, 0.8);
-    }
-
-    .about-section {
-      background-color: rgba(33, 33, 33, 0.9);
-      padding: 50px 20px;
-      margin-top: 40px;
-      border-radius: 8px;
-      width: 80%;
-      max-width: 800px;
-      text-align: left;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
-      transition: transform 0.3s ease;
-    }
-
-    .about-section:hover {
-      transform: translateY(-10px);
-    }
-
-    .about-section h2 {
-      font-size: 2.2rem;
-      color: #ff4f4f;
-      margin-bottom: 20px;
-      text-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
-    }
-
-    .about-section p {
-      font-size: 1.1rem;
-      color: #ddd;
-    }
-
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #bbb;
-      text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
-      50% { box-shadow: 0 0 35px rgba(255, 0, 0, 0.7); }
-      100% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); }
-    }
-
- @media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .header-title {
-    margin-left: 0;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .logo {
-    width: 50px;
-    height: 50px;
-
-    .navbar {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 40px;
-  font-size: 1.1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background 0.3s, color 0.3s;
-}
-
-.navbar a:hover {
-  background: #ff4f4f;
-  color: #fff;
-}
-}
-  </style>
+  <title>JDGroupAccessBot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
 <body>
-  
-  <!-- Header with Logo -->
- <div class="header">
-  <!-- Left side: logo -->
-  <img src="images/logo.png" alt="JDGroupAccessBot Logo" class="logo">
-  
-  <!-- Right side: name -->
-  <div class="header-title">
-    <h1>JDGroupAccessBot</h1>
-  </div>
-   
-   <nav class="navbar">
-  <a href="#about">About</a>
-  <a href="https://t.me/JDGroupAccessBot" target="_blank">Start Bot</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <!-- Header -->
+  <header class="fancy-header">
+    <div class="logo-title">
+      <img src="images/logo.png" alt="Logo" class="logo" id="logo">
+    </div>
 
-</div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
 
-  <p>Instant access to exclusive Telegram groups — just verify your YouTube subscription and you're in. Fast, secure, no fluff.</p>
-  <a class="btn" href="https://t.me/JDGroupAccessBot" target="_blank">Start Verification</a>
+    <nav class="navbar" id="navMenu">
+      <a href="#about">📄 About</a>
+      <a href="#faq">❓ FAQ</a>
+      <a href="#privacy">🔐 Privacy</a>
+      <a href="#contact">📬 Contact</a>
+      <a href="https://t.me/JDGroupAccessBot" target="_blank">🤖 Start</a>
+    </nav>
+
+    <div class="dark-toggle" onclick="toggleDarkMode()" title="Toggle dark mode">
+      🌙
+    </div>
+  </header>
 
   <!-- About Section -->
-  <div class="about-section">
-    <h2>About JDGroupAccessBot</h2>
+  <section id="about" class="section">
+    <h2>📄 About</h2>
     <p>
-      JDGroupAccessBot is designed to bring exclusive content and communities to users. By verifying your YouTube subscription, you unlock special access to Telegram groups where you can interact with creators, fans, and insiders. Whether you want early access to new videos, behind-the-scenes content, or just to be part of a community, JDGroupAccessBot ensures that you can easily gain access to these exclusive spaces.
+      JDGroupAccessBot is a Telegram bot that checks if users are subscribed to your YouTube channel before letting them into your private Telegram group.  
+      It's fast, secure, and makes community access simple and fair.
     </p>
-    <p>
-      It's fast, simple, and automated! Get verified in just a few clicks and start enjoying the perks of being part of a premium community.
-    </p>
-  </div>
+  </section>
 
-  <div class="footer">
-    © 2025 JDGroupAccessBot • Built for creators and communities
-  </div>
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <h2>❓ Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What does the bot do?</h3>
+      <p>It verifies if someone is subscribed to your YouTube channel before allowing them access to a private Telegram group.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is it safe?</h3>
+      <p>Yes. It uses secure Google OAuth and only reads subscription data. We never store or share sensitive information.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I start?</h3>
+      <p>Just click the Start button and follow the verification process. Simple and smooth.</p>
+    </div>
+  </section>
+
+  <!-- Privacy Section -->
+  <section id="privacy" class="section">
+    <h2>🔐 Privacy Policy</h2>
+    <p>
+      We respect your privacy. JDGroupAccessBot only accesses your public YouTube subscription data during verification.  
+      Your Telegram and YouTube information is never stored, shared, or sold. All invite links are one-time use and expire once claimed.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>📬 Contact</h2>
+    <p>
+      Have questions or need help? DM us on  
+      <a href="https://t.me/JDGroupAccessBot" target="_blank">Telegram</a>.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+      <a href="https://t.me/JDGroupAccessBot" target="_blank">Start Bot</a>
+    </div>
+    <p>&copy; 2025 JDGroupAccessBot. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+        document.getElementById("navMenu").classList.remove("show");
+      });
+    });
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+      localStorage.setItem("darkMode", document.body.classList.contains("dark"));
+    }
+
+    window.onload = () => {
+      if (localStorage.getItem("darkMode") === "true") {
+        document.body.classList.add("dark");
+      }
+    };
+  </script>
 </body>
 </html>
