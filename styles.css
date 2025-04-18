@@ -58,24 +58,24 @@ header, section, footer {
 }
 
 /* Hero Section */
-.hero-section {
+.hero {
   background-color: #ff9800;
   color: white;
   text-align: center;
   padding: 50px 20px;
 }
 
-.hero-section h2 {
+.hero h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.hero-section p {
+.hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
-.hero-section .btn {
+.hero .btn {
   background-color: #333;
   color: white;
   padding: 15px 25px;
@@ -84,7 +84,7 @@ header, section, footer {
   transition: background-color 0.3s ease;
 }
 
-.hero-section .btn:hover {
+.hero .btn:hover {
   background-color: #ff9800;
 }
 
@@ -151,16 +151,16 @@ header, section, footer {
   margin-bottom: 20px;
 }
 
-.faq-section .faq-item {
+.faq-item {
   margin-bottom: 20px;
 }
 
-.faq-section .faq-item h3 {
+.faq-item h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.faq-section .faq-item p {
+.faq-item p {
   font-size: 1rem;
   color: #555;
 }
@@ -191,25 +191,25 @@ header, section, footer {
 }
 
 /* Footer */
-.footer-section {
+.footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-.footer-section p {
+.footer p {
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
-.footer-section .footer-links a {
+.footer .footer-links a {
   color: white;
   margin: 0 10px;
   font-size: 1rem;
 }
 
-.footer-section .footer-links a:hover {
+.footer .footer-links a:hover {
   color: #ff9800;
 }
 
@@ -223,11 +223,11 @@ header, section, footer {
     height: 40px;
   }
 
-  .hero-section h2 {
+  .hero h2 {
     font-size: 2rem;
   }
 
-  .hero-section p {
+  .hero p {
     font-size: 1rem;
   }
 
@@ -241,7 +241,7 @@ header, section, footer {
     margin-bottom: 20px;
   }
 
-  .footer-section .footer-links a {
+  .footer .footer-links a {
     display: block;
     margin: 5px 0;
   }
