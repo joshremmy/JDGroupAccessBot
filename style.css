@@ -159,5 +159,69 @@ footer {
   line-height: 1.6;
 }
 
+/* Background gradient */
+body {
+  background: linear-gradient(135deg, #121212, #1a1a2e);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  color: #111;
+}
+
+body.light-mode .navbar,
+body.light-mode .section-box {
+  background: #fff;
+  color: #000;
+}
+
+body.light-mode .nav-links a {
+  color: #000;
+}
+
+body.light-mode .button {
+  background: #ff4747;
+  color: white;
+}
+
+body.light-mode .button:hover {
+  background: #cc0000;
+}
+
+body.light-mode footer {
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  margin-left: 20px;
+  padding: 6px 12px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+body.light-mode .theme-toggle {
+  background: #222;
+  color: #fff;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
