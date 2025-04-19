@@ -3,11 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How It Works — JDGroupAccessBot</title>
+  <title>JDGroupAccessBot</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="icon" href="images/logo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -22,29 +20,32 @@
         <a href="privacy-policy.html">Privacy Policy</a>
       </nav>
       <div class="hamburger" id="hamburger">
+        <button id="theme-toggle" class="theme-toggle">🌓</button>
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <button class="theme-toggle" id="theme-toggle">Toggle Mode</button>
     </div>
   </header>
 
-  <main class="fade-in">
-    <section class="page-section">
+  <main class="horizontal-scroll">
+  <section id="how-it-works" class="panel">
+    <div class="section-box fade-in">
       <h2>How It Works</h2>
       <ol>
-        <li>User clicks a personalized verification link from the bot.</li>
-        <li>They log in with their Google (YouTube) account.</li>
-        <li>The bot checks if they are subscribed to your YouTube channel.</li>
-        <li>If verified, they automatically receive a one-time private Telegram invite.</li>
+        <li>User clicks a verification link.</li>
+        <li>Signs in with Google (YouTube) account.</li>
+        <li>App checks if they are subscribed to your YouTube channel.</li>
+        <li>If verified, they receive a private Telegram invite.</li>
       </ol>
-    </section>
-  </main>
+    </div>
+  </section>
+
+</main>
+
 
   <footer>
     <p>&copy; 2025 JDGroupAccessBot — Built with love for Telegram communities.</p>
   </footer>
 </body>
 </html>
-
