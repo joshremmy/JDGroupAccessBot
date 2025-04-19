@@ -138,3 +138,26 @@ footer {
     display: flex;
   }
 }
+
+.section-box {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin: auto;
+}
+
+.panel h1,
+.panel h2 {
+  margin-bottom: 16px;
+}
+
+.panel p,
+.panel ol {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
