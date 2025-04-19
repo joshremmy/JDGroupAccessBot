@@ -3,64 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Features - JDGroupAccessBot</title>
-  <link rel="icon" href="https://example.com/favicon.ico" />
-  <link rel="stylesheet" href="styles.css">
+  <title>How It Works - JDGroupAccessBot</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <header class="header">
-    <div class="nav-left">
-      <img src="images/logo.png" alt="Logo" class="logo">
-    </div>
-    <div class="nav-right">
-      <h1>JDGroupAccessBot</h1>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>  
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <a href="index.html"><img src="images/logo.png" alt="JDGroupAccessBot Logo" class="logo" /></a>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
         <a href="about.html">About</a>
-        <a href="features.html">Features</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
       </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <button id="theme-toggle" class="theme-toggle">🌓</button>
     </div>
   </header>
 
-  <!-- Features Section -->
-  <section class="features-section" id="features">
-    <h2>Features</h2>
-    <ul>
-      <li>
-        <strong>Instant Access:</strong>
-        Join Telegram groups in seconds after verifying.
-      </li>
-      <li>
-        <strong>Simple & Seamless:</strong>
-        Easy YouTube login and verification flow.
-      </li>
-      <li>
-        <strong>Secure:</strong>
-        Encrypted, OAuth-based login — no password storage.
-      </li>
-      <li>
-        <strong>Multiple Groups:</strong>
-        One verification unlocks multiple access points.
-      </li>
-      <li>
-        <strong>One-time Invites:</strong>
-        Your private link is just for you. Nobody else.
-      </li>
-    </ul>
-  </section>
+  <main>
+    <section class="page-section fade-in">
+      <h2>How It Works</h2>
+      <ol>
+        <li>User clicks a verification link.</li>
+        <li>Signs in with Google (YouTube) account.</li>
+        <li>App checks if they are subscribed to your YouTube channel.</li>
+        <li>If verified, they receive a private Telegram invite.</li>
+      </ol>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="footer-section">
-    <p>© 2025 JDGroupAccessBot — Made for creators & communities.</p>
-    <div class="footer-links">
-      <a href="#about">About</a> | 
-      <a href="features.html">Features</a> | 
-      <a href="#faq">FAQ</a> | 
-      <a href="#contact">Contact</a>
-    </div>
+  <footer>
+    <p>&copy; 2025 JDGroupAccessBot — Built with love for Telegram communities.</p>
   </footer>
 </body>
 </html>
