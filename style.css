@@ -172,6 +172,88 @@ footer {
   margin: auto;
 }
 
+/* Existing styles kept... */
+
+.section-box {
+  background-color: #222;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  overflow-y: auto;
+  max-height: 85vh;
+  scrollbar-width: thin;
+  scrollbar-color: #555 #222;
+}
+
+.section-box h2,
+.section-box h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ff4747;
+}
+
+.section-box ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.section-box ul li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.section-box a {
+  color: #00acee;
+  text-decoration: underline;
+}
+
+.section-box a:hover {
+  color: #ffffff;
+}
+
+.panel p,
+.panel ul,
+.panel ol {
+  max-width: 750px;
+  font-size: 18px;
+  line-height: 1.75;
+  margin-bottom: 15px;
+}
+
+/* Light mode improvements */
+body.light-mode .section-box {
+  background: #ffffff;
+  color: #111;
+}
+
+body.light-mode .section-box h2,
+body.light-mode .section-box h3 {
+  color: #cc0000;
+}
+
+body.light-mode .section-box a {
+  color: #d00000;
+}
+
+body.light-mode .section-box a:hover {
+  color: #000000;
+}
+
+/* Mobile padding adjustments */
+@media (max-width: 768px) {
+  .section-box {
+    padding: 30px 20px;
+    max-height: unset;
+  }
+
+  .panel {
+    padding: 40px 15px;
+  }
+}
+
+
 .panel h1,
 .panel h2 {
   margin-bottom: 16px;
