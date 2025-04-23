@@ -112,12 +112,36 @@ header {
 
 /* Footer */
 footer {
-  background: #1f1f1f;
-  padding: 15px;
+  background-color: #111;
+  color: #eee;
   text-align: center;
-  font-size: 14px;
-  margin-top: -2px;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
