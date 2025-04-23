@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service - JDGroupAccessBot</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="panel fade-in">
+      <div class="section-box">
+        <h2>Terms of Service</h2>
+
+        <p>Welcome to JDGroupAccessBot. By using this website or our Telegram bot, you agree to comply with and be bound by the following Terms of Service.</p>
+
+        <h3>1. Acceptance of Terms</h3>
+        <p>By accessing this website and our services, you accept and agree to be bound by these terms. If you do not agree to these terms, you may not use our services.</p>
+
+        <h3>2. Use of Our Services</h3>
+        <ul>
+          <li>You must not use our services for any illegal or unauthorized purpose.</li>
+          <li>You agree not to copy, modify, distribute, or reverse engineer any part of our services.</li>
+        </ul>
+
+        <h3>3. Subscription Verification</h3>
+        <p>We use Google authentication to verify your subscription to a specific YouTube channel. By proceeding, you consent to sharing your YouTube subscription status.</p>
+
+        <h3>4. Changes to Terms</h3>
+        <p>We may update these Terms of Service at any time. Changes will be posted here, and your continued use of our services implies your acceptance.</p>
+
+        <h3>5. Termination</h3>
+        <p>We reserve the right to terminate or suspend your access to our services without prior notice for any breach of these terms.</p>
+
+        <h3>6. Contact</h3>
+        <p>If you have any questions regarding these Terms of Service, please reach out to us via <a href="mailto:support@example.com">support@example.com</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms-of-service.html">Terms</a>
+      </div>
+      <p>&copy; 2025 JDGroupAccessBot. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const links = document.querySelector('.nav-links');
+      links.classList.toggle('active');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.fade-in').classList.add('visible');
+    });
+  </script>
+</body>
+</html>
